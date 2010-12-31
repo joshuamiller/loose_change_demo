@@ -1,8 +1,8 @@
-== Loose Change / GeoCouch Demo
+## Loose Change / GeoCouch Demo
 
 This is a demonstration application to show you how to get started using [Loose Change](http://github.com/joshuamiller/loose_change) and [GeoCouch](http://github.com/vmx/couchdb) to managed location-aware data.
 
-== Getting Started
+## Getting Started
 
 1. Install GeoCouch (instructions available via [github](http://github.com/vmx/couchdb)).
 
@@ -16,15 +16,15 @@ happens).  The lakes data is via the [USGS](http://geonames.usgs.gov/domestic/do
 
 5. Run `rails server` and check it out!
 
-== How It Works
+## How It Works
 
-=== The Model
+### The Model
 
 The Lake model, in app/models/lake.rb, is a simple LooseChange model
 with two normal properties (`name` and `state`) and a spatial point
 property `loc`, which is set as a `[lat,lng]` array.
 
-=== The Controller
+### The Controller
 
 By declaring the geo_point property, LooseChange gives us a
 `by_bounding_box` method that allows us to find all documents whose
@@ -32,7 +32,7 @@ position is within the bounding box defined by two points (SW and NE
 corners, respectively).  We find those documents and return them as
 JSON to the UI.
 
-=== The Front End
+### The Front End
 
 Most of the work here is done in JavaScript, in
 public/javascripts/application.js.  On document ready, we try the
