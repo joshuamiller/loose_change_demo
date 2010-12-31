@@ -36,10 +36,10 @@ JSON to the UI.
 
 Most of the work here is done in JavaScript, in
 public/javascripts/application.js.  On document ready, we try the
-HTML5 geolocation API (see (a good demo at html5demos.com)[http://html5demos.com/geo]) to get the user's location, or fall back on a
+HTML5 geolocation API (see [a good demo at html5demos.com](http://html5demos.com/geo)) to get the user's location, or fall back on a
 predefined point near the middle of the US.  Once we have the center
 position, we initialize the map (see documentation for the [Google
-Maps
+Maps      
 API](http://code.google.com/apis/maps/documentation/javascript/)). When
 the map is drawn, and any time the map is redrawn, we call a function
 `retrieveLakes` which makes an AJAX call to the application to
